@@ -8,14 +8,14 @@ export default function Employees() {
                 <Carousel.Item>
                     <img
                         className={styles.imgPerson}
-                        src="/images/person1.png"
+                        src="/person1.png"
                         alt="First slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className={styles.imgPerson}
-                        src="/images/person2.png"
+                        src="/person2.png"
                         alt="Second slide"
                     />
 
@@ -23,7 +23,7 @@ export default function Employees() {
                 <Carousel.Item>
                     <img
                         className={styles.imgPerson}
-                        src="/images/person3.png"
+                        src="/person3.png"
                         alt="Third slide"
                     />
 
