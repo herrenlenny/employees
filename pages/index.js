@@ -2,8 +2,9 @@ import {deletePost, getAllPosts} from "@lib/api";
 import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import {console} from "next/dist/compiled/@edge-runtime/primitives/console";
-import styles from "@components/SearchList.module.css";
+import styles from "./index.module.css"
 import Link from "next/link";
+import db from "@lib/database/db.json"
 
 export default function IndexPage() {
 
@@ -14,7 +15,7 @@ export default function IndexPage() {
     useEffect(() => {
         const loadPost = async () => {
             try {
-                const posts = await getAllPosts()
+                const posts = db.posts
                 setPosts(posts);
 
             } catch (e) {

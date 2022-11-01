@@ -3,19 +3,15 @@
     top: 0;
     height: 100%;
     width: 100%;
+    text-align: center;
     padding: 0.5em;
     box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
-    display: flex;
     z-index: 99;
     background-color: black;
 }
 
-.head {
-    background-color: black;
-}
-
 .menu {
-    background-color: black;
+    float: left;
 }
 
 
