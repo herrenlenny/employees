@@ -1,7 +1,7 @@
 import {createPost} from "@lib/api";
 import {useRouter} from "next/router"
 import {useState} from "react"
-import styles from "./postForm.module.css"
+import styles from "./PostForm.module.css"
 
 const defaultModel = {
     title: "",
