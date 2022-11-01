@@ -1,0 +1,42 @@
+.impressum {
+    margin: 0 auto;
+    border: solid black;
+    width: 60%;
+    text-align: center;
+    padding: 1em;
+}
+
+.impressum p {
+    font-size: 60%;
+}
+
+@media only screen and (min-width: 250px) {
+    .impressum p {
+        font-size: 60%;
+    }
+
+    .impressum {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .impressum p {
+        font-size: 80%;
+    }
+
+    .impressum {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .impressum p {
+        font-size: 100%;
+    }
+
+    .impressum {
+        width: 60%;
+    }
+}
+

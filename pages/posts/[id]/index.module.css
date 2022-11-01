@@ -1,0 +1,132 @@
+.body {
+    text-align: center;
+    border: solid black;
+}
+
+.PostName {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+    margin-top: 1em;
+}
+
+.article h2 {
+    font-size: 0.8em;
+}
+
+.article {
+    border: solid black;
+    text-align: center;
+    height: 28em;
+    width: 15em;
+    margin: 0 auto;
+}
+
+.description {
+    margin-bottom: 3em;
+    font-size: 0.6em;
+}
+
+.EditDeleteBackLink a {
+    color: black;
+    font-size: 0.7em;
+}
+
+.NoEditAndDelete {
+    font-size: 0.9em;
+}
+
+.deleteAndeBackLink {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto 2em auto;
+}
+
+.article {
+    height: 100%;
+    width: 80%;
+    padding: 2em;
+}
+
+.deleteLink {
+    font-size: 0.7em;
+}
+
+.backLink {
+    font-size: 0.7em;
+}
+
+@media only screen and (min-width: 400px) {
+
+    .PostName {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 0.8em;
+    }
+
+    .article h2 {
+        font-size: 1.1em;
+    }
+
+    .deleteLink {
+        font-size: 1em;
+    }
+
+    .backLink {
+        font-size: 1em;
+    }
+
+
+    @media only screen and (min-width: 500px) {
+
+        .PostName {
+            font-size: 2em;
+        }
+
+        .description {
+            font-size: 1em;
+        }
+
+        .article h2 {
+            font-size: 1.3em;
+        }
+
+        .deleteLink {
+            font-size: 1.3em;
+        }
+
+        .backLink {
+            font-size: 1.3em;
+        }
+
+    }
+
+    @media only screen and (min-width: 600px) {
+
+        .PostName {
+            font-size: 2em;
+        }
+
+        .description {
+            font-size: 1.2em;
+        }
+
+        .article h2 {
+            font-size: 1.5em;
+        }
+
+        .deleteLink {
+            font-size: 1.5em;
+        }
+
+        .backLink {
+            font-size: 1.5em;
+        }
+
+    }
+
+}

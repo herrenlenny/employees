@@ -1,0 +1,20 @@
+.imgPerson {
+    height: auto;
+    width: 100%;
+}
+
+.carousel {
+    text-align: center;
+}
+
+@media only screen and (min-width: 850px) {
+    .imgPerson {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .imgPerson {
+        width: 40%;
+    }
+}

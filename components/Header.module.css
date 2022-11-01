@@ -1,0 +1,61 @@
+.header {
+    position: sticky;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    z-index: 99;
+    background-color: black;
+}
+
+.head {
+    background-color: black;
+}
+
+.menu {
+    background-color: black;
+}
+
+
+.menuLinks {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.menu a {
+    font-size: 70%;
+    color: white !important;
+}
+
+.header > a {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.header > a:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 500px) {
+    .menuLinks {
+        flex-direction: row;
+        width: 60%;
+    }
+
+    .menu a {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header {
+        font-size: 2em;
+    }
+}

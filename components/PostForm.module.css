@@ -1,0 +1,38 @@
+.postsForm {
+}
+
+.error {
+    color: red;
+    margin-top: 0.5em;
+}
+
+.postsForm form {
+    align-self: center;
+}
+
+.postsForm textarea {
+    padding: 0.5% !important;
+    height: 12em;
+}
+
+.postsForm fieldset {
+    margin: 0 auto;
+    border: none;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.postsForm label {
+    padding-bottom: 0.5em;
+}
+
+.postsForm input {
+    padding: 0.5em;
+}
+
+.postsForm button {
+    margin-left: 0.5em;
+    background-color: white;
+}
