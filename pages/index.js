@@ -71,6 +71,12 @@ export default function IndexPage() {
                                                 }
                                             }
                                             localStorage.setItem("posts", JSON.stringify(newArray));
+
+                                            console.log("here")
+                                            console.log(localStorage.getItem("posts"))
+
+                                            setPosts(newArray)
+
                                             await router.push("/")
                                         }
                                     }}>Delete</a>
