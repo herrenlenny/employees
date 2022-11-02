@@ -12,11 +12,15 @@
 
 .menu {
     float: left;
-
 }
 
 .menu button{
     color: white;
+    margin: auto 0;
+}
+
+.menuLinks a{
+    margin-bottom: 5%;
 }
 
 
@@ -40,7 +44,7 @@
 }
 
 .header a{
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .header > a:hover {
@@ -57,5 +61,10 @@
 @media only screen and (min-width: 600px) {
     .header {
         font-size: 2em;
+    }
+
+    .menu Button{
+        height: 5em;
+        width: 5em;
     }
 }

@@ -70,10 +70,8 @@ export default function IndexPage() {
                                                     newArray.push(posts[i])
                                                 }
                                             }
-
                                             localStorage.setItem("posts", JSON.stringify(newArray));
-
-
+                                            await router.push("/")
                                         }
                                     }}>Delete</a>
                                 </div>

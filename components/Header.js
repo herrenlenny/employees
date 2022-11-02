@@ -14,7 +14,7 @@ export default function Header({children}) {
 
 
     return (
-        <div className={styles.head}>
+        <div>
 
 
             <header className={styles.header}>
@@ -25,14 +25,17 @@ export default function Header({children}) {
 
                     <Offcanvas show={show} onHide={handleClose}>
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                            <Offcanvas.Title>Menu</Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <div className={styles.links}>
+                            <div>
                                 <div className={styles.menuLinks}>
-                                    <Link closeButton href="/posts/create">Create a Post</Link>
-                                    <Link closeButton href="/employees">Employees</Link>
-                                    <Link closeButton href="/impressum">Impressum</Link>
+                                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                                    <a onClick={async (e) => handleClose} href="/posts/create">Create a Post</a>
+                                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                                    <a onClick={async (e) => handleClose} href="/employees">Employees</a>
+                                    {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                                    <a onClick={async (e) => handleClose} href="/impressum">Impressum</a>
                                 </div>
 
                             </div>
