@@ -96,14 +96,37 @@ export default function postForm() {
         //    Object.keys(db.posts[i]).length;
         //}
 
-        const newObject = '{"id": +, "title": '+ post.title.toString() + ', "description": '+ post.description.toString()+'}';
-        localStorage.setItem(number.toString(), JSON.stringify(newObject));
+
+
+        let posts = JSON.parse(localStorage.getItem('posts')) || []
+
+        console.log(posts);
+        const generatedId = posts.length + 1;
+
+        const postToAdd = {
+            id: generatedId,
+            title: post.title,
+            description: post.description
+        };
+
+        posts.push(postToAdd);
+
+        localStorage.setItem("posts", JSON.stringify(posts));
+
+
+
+       //posts = localStorage.length + 1 + " " + post.title.toString() + " " + post.description.toString();
+
+       //const newObject = '{"id": +, "title": '+ post.title.toString() + ', "description": '+ post.description.toString()+'"}';
+       //localStorage.setItem((localStorage.length + 1).toString(), posts);
+
+
 
         alert("posts created!")
         router.push(`/`)
         setIsLoading(false)
     }
-    const newObject = '{"id": 2, "title": '+ post.title.toString() + ', "description": '+ post.description.toString()+'}';
+
 
     return (
         <div className={styles.postsForm}>

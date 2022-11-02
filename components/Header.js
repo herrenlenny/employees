@@ -19,7 +19,7 @@ export default function Header({children}) {
 
             <header className={styles.header}>
                 <div className={styles.menu}>
-                    <Button variant="primary" onClick={handleShow}>
+                    <Button variant="dark" onClick={handleShow}>
                         ≡
                     </Button>
 
@@ -28,8 +28,14 @@ export default function Header({children}) {
                             <Offcanvas.Title>Offcanvas</Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            Some text as placeholder. In real life you can have the elements you
-                            have chosen. Like, text, images, lists, etc.
+                            <div className={styles.links}>
+                                <div className={styles.menuLinks}>
+                                    <Link closeButton href="/posts/create">Create a Post</Link>
+                                    <Link closeButton href="/employees">Employees</Link>
+                                    <Link closeButton href="/impressum">Impressum</Link>
+                                </div>
+
+                            </div>
                         </Offcanvas.Body>
                     </Offcanvas>
                 </div>

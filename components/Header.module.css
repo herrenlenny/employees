@@ -12,11 +12,16 @@
 
 .menu {
     float: left;
+
+}
+
+.menu button{
+    color: white;
 }
 
 
 .menuLinks {
-    width: 80%;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -24,9 +29,8 @@
     margin: 0 auto;
 }
 
-.menu a {
-    font-size: 70%;
-    color: white !important;
+.menuLinks a {
+    font-size: 150%;
 }
 
 .header > a {
@@ -35,15 +39,15 @@
     font-size: 1em;
 }
 
+.header a{
+    font-size: 2em;
+}
+
 .header > a:hover {
     text-decoration: none;
 }
 
 @media only screen and (min-width: 500px) {
-    .menuLinks {
-        flex-direction: row;
-        width: 60%;
-    }
 
     .menu a {
         font-size: 100%;

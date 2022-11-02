@@ -1,4 +1,4 @@
-import {deletePost, getAllPosts} from "@lib/api";
+import {deletePost, getAllPosts, getPostById} from "@lib/api";
 import {useEffect, useState} from "react";
 import {useRouter} from "next/router";
 import {console} from "next/dist/compiled/@edge-runtime/primitives/console";
@@ -8,25 +8,26 @@ import db from "@lib/database/db.json"
 
 export default function IndexPage() {
 
-    const [posts, setPosts] = useState([]);
     const router = useRouter();
     const [searchFilter, setSearchFilter] = useState("")
+    const [posts, setPosts] = useState([])
 
     useEffect(() => {
         const loadPost = async () => {
+
             try {
-                const posts = db.posts
-                setPosts(posts);
+                const post = JSON.parse(localStorage.getItem("posts"))
+                setPosts(post)
 
             } catch (e) {
                 if (e.status === 404) router.push("/404")
+                console.log("here")
             }
         }
         loadPost()
     }, [])
 
     const handleChange = (e) => {
-        setPosts([...posts])
         setSearchFilter(e.target.value)
     }
     return (
@@ -62,10 +63,17 @@ export default function IndexPage() {
 
                                     <a className={styles.deleteLink} href="#" onClick={async (e) => {
                                         if (confirm("Delete Post?")) {
-                                            await deletePost(post.id)
-                                            console.log("here" + now)
-                                            alert("Post deleted!")
-                                            router.push("/")
+                                            let newArray = [];
+                                            for(let i = 0; i < posts.length; i++){
+                                                if(posts[i].id !== post.id){
+                                                    console.log(i)
+                                                    newArray.push(posts[i])
+                                                }
+                                            }
+
+                                            localStorage.setItem("posts", JSON.stringify(newArray));
+
+
                                         }
                                     }}>Delete</a>
                                 </div>
