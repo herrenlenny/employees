@@ -79,15 +79,6 @@
     margin-bottom: 10%;
     display: grid;
     justify-items: center;
-    justify-content: center;
-}
-
-.readMore {
-    position: absolute;
-    bottom: 0;
-
-    left: 50%;
-    transform: translate(-50%);
 }
 
 .article {

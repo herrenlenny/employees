@@ -10,21 +10,21 @@
     background-color: black;
 }
 
-.menu {
+.menuHamburger {
     float: left;
 }
 
-.menu button{
+.menuHamburger button{
     color: white;
     margin: auto 0;
 }
 
-.menuLinks a{
+.menuLinksHamburger a{
     margin-bottom: 5%;
 }
 
 
-.menuLinks {
+.menuLinksHamburger {
     width: 100%;
     text-align: center;
     display: flex;
@@ -33,7 +33,7 @@
     margin: 0 auto;
 }
 
-.menuLinks a {
+.menuLinksHamburger a {
     font-size: 150%;
 }
 
@@ -51,20 +51,39 @@
     text-decoration: none;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 700px) {
 
-    .menu a {
-        font-size: 100%;
+    .menuHamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        background: none;
     }
 }
 
-@media only screen and (min-width: 600px) {
-    .header {
-        font-size: 2em;
+@media only screen and (min-width: 700px) {
+    .menuHamburger {
+        display: none;
     }
 
-    .menu Button{
-        height: 5em;
-        width: 5em;
+    .menu {
+        display: block;
+        background: black;
+    }
+
+    .menuLinks{
+        width: 60%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .menuLinks a{
+        color: white !important;
+        justify-content: space-between;
     }
 }

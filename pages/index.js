@@ -53,10 +53,6 @@ export default function IndexPage() {
 
                                         <div className={styles.descriptionAndReadMoreLink}>
                                             <p className={styles.description}>{post.description.slice(0, 400) + "..."}</p>
-
-                                            <Link href={`/posts/${post.id}`}>
-                                                <a className={styles.readMore}>read more...</a>
-                                            </Link>
                                         </div>
 
                                     </div>
